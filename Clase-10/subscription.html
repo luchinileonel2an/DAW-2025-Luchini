@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motorsport Daily | Registro</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-fecha">
+            <h1>Motorsport Daily</h1>
+            <img src="media/logo.png" alt="Logo" style="height: 150px;">
+        </div>
+        <nav class="nav">
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">MotoGP</a></li>
+                <li><a href="#">Formula 1</a></li>
+                <li><a href="#">MXGP</a></li>
+                <li><a href="#">MX Argentino</a></li>
+                <li><a href="subscription.html">Registro</a></li>
+            </ul>
+            <div class="menu-icon">☰</div>
+        </nav>
+    </header>
+
+    <main class="contenedor">
+        <section class="formulario-suscripcion">
+            <h2 id="saludo">HOLA</h2>
+            <form id="form-suscripcion" novalidate>
+                <div class="form-columna">
+                    <label>Nombre completo <input type="text" id="nombre" /></label>
+                    <span class="error" id="error-nombre"></span>
+
+                    <label>Email <input type="email" id="email" /></label>
+                    <span class="error" id="error-email"></span>
+
+                    <label>Contraseña <input type="password" id="password" /></label>
+                    <span class="error" id="error-password"></span>
+
+                    <label>Repetir contraseña <input type="password" id="repetir" /></label>
+                    <span class="error" id="error-repetir"></span>
+
+                    <label>Edad <input type="number" id="edad" /></label>
+                    <span class="error" id="error-edad"></span>
+                </div>
+
+                <div class="form-columna">
+                    <label>Teléfono <input type="text" id="telefono" /></label>
+                    <span class="error" id="error-telefono"></span>
+
+                    <label>Dirección <input type="text" id="direccion" /></label>
+                    <span class="error" id="error-direccion"></span>
+
+                    <label>Ciudad <input type="text" id="ciudad" /></label>
+                    <span class="error" id="error-ciudad"></span>
+
+                    <label>Código Postal <input type="text" id="codigo" /></label>
+                    <span class="error" id="error-codigo"></span>
+
+                    <label>DNI <input type="text" id="dni" /></label>
+                    <span class="error" id="error-dni"></span>
+                </div>
+
+                <div class="form-boton">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+        <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <span id="cerrar-modal" class="cerrar">&times;</span>
+            <h3 id="modal-titulo"></h3>
+            <pre id="modal-mensaje"></pre>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Motorsport Daily</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
