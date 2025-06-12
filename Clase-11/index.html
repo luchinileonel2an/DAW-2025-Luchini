@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personajes Rick & Morty</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Personajes Rick & Morty</h1>
+    </header>
+
+    <main>
+      <section class="filtros">
+        <input type="text" id="name" placeholder="Nombre" />
+        <input
+          type="text"
+          id="status"
+          placeholder="Estado (vivo, muerto, desconocido)"
+        />
+        <input type="text" id="species" placeholder="Especie" />
+        <input type="text" id="type" placeholder="Tipo" />
+        <input
+          type="text"
+          id="gender"
+          placeholder="Género (femenino, masculino, sin genero, desconocido)"
+        />
+        <button id="btn-todos">Mostrar Todos</button>
+        <button id="btn-filtrar">Filtrar</button>
+      </section>
+
+      <section id="resultado" class="personajes"></section>
+    </main>
+
+    <footer>
+      <p>DAW 2025 - UAI - Luchini</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
